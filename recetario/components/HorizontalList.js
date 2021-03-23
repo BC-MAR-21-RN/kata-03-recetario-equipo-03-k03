@@ -4,17 +4,17 @@ import { View, Text, StyleSheet, FlatList } from 'react-native'
 const HorizonalList = ({ title }) => {
     return (
         <View>
-            <Text >{title}</Text>
-            <FlatList></FlatList>
+            <Text style={styles.title}>{title}</Text>
+            <FlatList> </FlatList>
         </View>
     )
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
     title: {
-        color: 'pink'
+        color: '#F50087',
+        fontSize: 50
     }
-
 })
 
 export default HorizonalList

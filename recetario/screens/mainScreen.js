@@ -5,16 +5,18 @@ import SearchBar from '../components/searchBar';
 const MainScreen = () => {
 
     return (
-        <View style={styles.body}>
-            <SearchBar/>
-            <HorizonalList/>
-            <HorizonalList/>
+        <View style={styles.body} >
+            <SearchBar />
+            <HorizonalList title='Trending' />
+            <HorizonalList title='Recent' />
         </View>
     )
 };
 const styles = StyleSheet.create({
     body: {
-        backgroundColor: 'black'
+        flex:1,
+        backgroundColor: '#282828',
+        justifyContent: 'space-evenly',
     }
 })
 
