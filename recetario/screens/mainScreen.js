@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
     body: {
         flex:1,
         backgroundColor: '#282828',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-between',
+        padding:10
     }
 })
 
