@@ -14,10 +14,9 @@ const MainScreen = () => {
 };
 const styles = StyleSheet.create({
     body: {
-        flex:1,
+        flex: 1,
         backgroundColor: '#282828',
-        justifyContent: 'space-between',
-        padding:10
+        padding: 5,
     }
 })
 

@@ -11,7 +11,8 @@ const App = () => {
 }
 const styles = StyleSheet.create({
     body: {
-        backgroundColor: '#343435'
+        backgroundColor: '#343435',
+
     }
 })
 export default App
