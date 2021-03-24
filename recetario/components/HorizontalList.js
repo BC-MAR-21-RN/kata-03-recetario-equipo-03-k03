@@ -1,36 +1,74 @@
 import React from 'react'
-import { View, Text, StyleSheet, FlatList } from 'react-native'
+import { View, Text, StyleSheet, FlatList, TouchableOpacity, Image, SafeAreaView } from 'react-native'
+//import meals from './recetas'
+
+const DATAPRUEBA = [
+    {
+        id:"1",
+        name: "prueba1"        
+    },
+    {
+        id:"2",
+        name: "prueba2"        
+    },
+    {
+        id:"3",
+        name: "prueba3"        
+    },
+    {
+        id:"4",
+        name: "prueba4"        
+    },
+    {
+        id:"5",
+        name: "prueba5"       
+    }
+]
 
 const HorizonalList = ({ title }) => {
-    const mealsData = require('../data/recetas.json')
     
+
+    const itemList = ({item})=>{
+        
+        <TouchableOpacity style={styles.item}>            
+            <Text style={styles.textitem}>{item.name}</Text>         
+        </TouchableOpacity>
+    }
+
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <Text style={styles.title}>{title}</Text>
-            <FlatList
-                data={mealsData}
-                renderItem={({ item, id }) => {
-                    <View>
-                        <Text style={styles.item}>{item.name}</Text>
-                    </View>
-                }}
-                keyExtractor={item => item.id} />
-        </View>
+            <FlatList style = {{backgroundColor: 'yellow'}}
+                data={DATAPRUEBA}
+                renderItem={itemList}
+                keyExtractor={(item) => item.id}
+                horizontal={true}
+            />           
+        </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
-    container: {
+    container: {        
+        flex:1,
         padding: 10,
     },
     title: {
         color: '#F50087',
         fontSize: 50
     },
-    item: {
+    textitem: {       
         color: 'white',
-        fontSize: 70,
+        fontSize: 20,
 
+    },
+    image:{  
+        width:'100%',
+        height:'100%'           
+    },
+    item:{        
+        width:20,
+        height:20
     }
 })
 

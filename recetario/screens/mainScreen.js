@@ -1,15 +1,15 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, SafeAreaView } from 'react-native';
 import HorizonalList from '../components/HorizontalList';
 import SearchBar from '../components/searchBar';
 const MainScreen = () => {
 
     return (
-        <View style={styles.body} >
+        <SafeAreaView style={styles.body}>           
             <SearchBar />
             <HorizonalList title='Trending' />
-            <HorizonalList title='Recent' />
-        </View>
+            <HorizonalList title='Recent' />           
+        </SafeAreaView>
     )
 };
 const styles = StyleSheet.create({
