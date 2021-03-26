@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Image, StyleSheet, View } from 'react-native'
+import { Text, Image, StyleSheet, View, TouchableOpacity } from 'react-native'
 
 
 const ListItem = ({ meal, imgSrc, imgHeight }) => {
@@ -8,7 +8,7 @@ const ListItem = ({ meal, imgSrc, imgHeight }) => {
             <Image source={imgSrc} style={{
                 height:  imgHeight ,
                 width: 120,
-                borderRadius: 15,
+                borderRadius: 25,
                 resizeMode:'stretch'
             }} />
             <Text style={styles.textItem}>{meal}</Text>

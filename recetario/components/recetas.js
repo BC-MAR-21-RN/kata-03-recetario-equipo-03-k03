@@ -11,7 +11,7 @@
                 sherdded_mozarella_cheese: "1/2 cup"
                 },
             trending:false,
-            recent:true,
+            recent:false,
             imgUrl: "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2017/04/pizzapepperoni0.jpg"
         },
         {
@@ -26,7 +26,7 @@
                 sherdded_mozzarella_cheese: "2 cup"
             },
             trending:true,
-            recent:true,
+            recent:false,
             imgUrl: "https://www.thechunkychef.com/wp-content/uploads/2017/09/Meatball-Sub-Casserole-cheese.jpg"
         },
         {
@@ -47,7 +47,7 @@
                 chopped_walnuts: "1 cup"
             },
             trending:true,
-            recent:true,
+            recent:false,
             imgUrl: "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/62298.jpg?output-format=auto&output-quality=auto"
         },
         {
@@ -67,7 +67,7 @@
                 bunch_of_parsley: "1/2"
             },
             trending:true,
-            recent:true,
+            recent:false,
             imgUrl: "https://realfood.tesco.com/media/images/RFO-1400x919-PastaPuttanesca-0c525969-43b4-4017-9f77-3fa308a922be-0-1400x919.jpg"
         },
 
@@ -88,7 +88,7 @@
                 basil: "small bunch"
             },
             trending:true,
-            recent:true,
+            recent:false,
             imgUrl: "https://1.bp.blogspot.com/-tAf2-wAxIUM/XtqMdSVgDoI/AAAAAAAAy2E/NTdATKbKl2EyOluaJpTE589HchhkhZEaQCK4BGAsYHg/s640/A50B0308-FFD6-404A-BF02-9F2FD63F63BC.jpeg"
         }
 ]
