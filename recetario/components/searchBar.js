@@ -16,15 +16,13 @@ const SearchBar = () => {
 
 const style = StyleSheet.create({
     bar: {
-
         color: 'white',
-        borderWidth: 0,
+        borderWidth: 0
     },
-
     barContainer: {
         backgroundColor: '#343435',
         borderRadius: 10,
-        margin: 10, 
+        margin: 10,
         padding: 10,
         flexDirection: 'row',
         alignItems: 'center',

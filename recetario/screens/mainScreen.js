@@ -1,14 +1,18 @@
 import React from 'react';
-import { View, StyleSheet, Text, SafeAreaView } from 'react-native';
+import { StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import HorizonalList from '../components/HorizontalList';
 import SearchBar from '../components/searchBar';
+
+
 const MainScreen = () => {
 
     return (
-        <SafeAreaView style={styles.body}>           
-            <SearchBar />
-            <HorizonalList title='Trending' />
-            <HorizonalList title='Recent' />           
+        <SafeAreaView style={styles.body}>
+            <ScrollView>
+                <SearchBar />
+                <HorizonalList title='Trending' customHeight={100}  data={true}/>
+                <HorizonalList title='Recent' customHeight={150} data={false}/>
+            </ScrollView>
         </SafeAreaView>
     )
 };
