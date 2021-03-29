@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { StyleSheet, FlatList, TouchableOpacity, View, Text, } from 'react-native'
 import ListItem from './listItem'
-import meals from './recetas'
+
 
 
 const HorizonalList = ({ title, customHeight, myData, onPress }) => {
 
     const itemList = ({ item }) => (
-        item.trending == true ? <TouchableOpacity onPress={title === 'Trending' && (() => onPress(item))}>
+        item.trending == true ? <TouchableOpacity onPress={() => onPress(item)}>
             <ListItem meal={item.name} imgSrc={{ uri: item.imgUrl }} imgHeight={customHeight} />
         </TouchableOpacity> :
-            item.recent == true ? <TouchableOpacity >
+            item.recent == true ? <TouchableOpacity onPress={() => onPress()}>
                 <ListItem meal={item.name} imgSrc={{ uri: item.imgUrl }} imgHeight={customHeight} />
             </TouchableOpacity> : null
-
     )
 
     return (
