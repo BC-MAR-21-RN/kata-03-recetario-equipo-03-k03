@@ -14,21 +14,28 @@ const MainScreen = ({ navigation }) => {
             setItems([...newItems, item])
             setArr([...arr, item.id])
         }
-        changeScreen()
+        changeScreen(item, 'TRENDING')
     }
 
-    const changeScreen = () => {
-        navigation.navigate('mealDets')
+    const changeScreen = (item, category='RECENT') => {
+        navigation.navigate('mealDets', {
+            mealCategory: category,
+            mealName : item.name,
+            mealIngredients: item.ingredients,
+            imgUrl: item.imgUrl,
+            mealServings: item.servings,
+            mealFav: item.favorite 
+        })
     }
 
     return (
-        <SafeAreaView style={styles.body} >
+        <View style={styles.body} >
             <ScrollView>
-                <SearchBar />
+                <SearchBar/>
                 <HorizonalList title='Trending' customHeight={100} myData={meals} onPress={filterItems} />
                 <HorizonalList title='Recent' customHeight={150} myData={newItems} onPress={changeScreen}/>
             </ScrollView>
-        </SafeAreaView>
+        </View>
     )
 };
 

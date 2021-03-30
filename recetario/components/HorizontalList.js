@@ -10,7 +10,7 @@ const HorizonalList = ({ title, customHeight, myData, onPress }) => {
         item.trending == true ? <TouchableOpacity onPress={() => onPress(item)}>
             <ListItem meal={item.name} imgSrc={{ uri: item.imgUrl }} imgHeight={customHeight} />
         </TouchableOpacity> :
-            item.recent == true ? <TouchableOpacity onPress={() => onPress()}>
+            item.recent == true ? <TouchableOpacity onPress={() => onPress(item)}>
                 <ListItem meal={item.name} imgSrc={{ uri: item.imgUrl }} imgHeight={customHeight} />
             </TouchableOpacity> : null
     )
@@ -30,7 +30,7 @@ const HorizonalList = ({ title, customHeight, myData, onPress }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 10,
+        padding: 15,
     },
     title: {
         color: '#F50087',
