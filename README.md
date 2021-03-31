@@ -5,6 +5,9 @@
 ![Cover](img/cover.jpg)
 <span>Photo by <a href="https://unsplash.com/@michaelwb?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Michael Browning</a> on <a href="https://unsplash.com/s/photos/cook?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
+## Calificación CodeClimate
+[![Maintainability](https://api.codeclimate.com/v1/badges/348c0ec38e3c77941fc0/maintainability)](https://codeclimate.com/github/BC-MAR-21-RN/kata-03-recetario-equipo-03-k03/maintainability)
+
 ## Objetivo
 El objetivo de esta kata es introducirte en el desarrollo de aplicaciones móviles utilizando React Native.
 
