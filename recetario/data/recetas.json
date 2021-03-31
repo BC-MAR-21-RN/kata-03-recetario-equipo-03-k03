@@ -17,7 +17,7 @@
                 "amount": "1 cup",
                 "id": "item3"
         }],
-        "trending":false,
+        "trending":true,
         "recent":false,
         "imgUrl": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2017/04/pizzapepperoni0.jpg"
     },

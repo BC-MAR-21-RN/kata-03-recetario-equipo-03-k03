@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import {StyleSheet, ScrollView, SafeAreaView, View} from 'react-native';
 import HorizonalList from '../components/HorizontalList';
-import meals from '../components/recetas';
 import SearchBar from '../components/searchBar';
+
+
+const meals = require('../data/recetas.json')
 
 const MainScreen = ({navigation}) => {
   const [newItems, setItems] = useState([]);
@@ -37,12 +39,12 @@ const MainScreen = ({navigation}) => {
           myData={meals}
           onPress={filterItems}
         />
-        <HorizonalList
+         <HorizonalList
           title="Recent"
           customHeight={150}
           myData={newItems}
           onPress={changeScreen}
-        />
+        /> 
       </ScrollView>
     </View>
   );

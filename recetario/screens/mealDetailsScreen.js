@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, ScrollView, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import meals from '../components/recetas';
+
+const meals = require('../data/recetas.json')
 
 const MealDets = ({navigation, route}) => {
   const {
